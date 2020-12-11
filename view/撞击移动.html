@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .box1 {
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            background-color: greenyellow;
+        }
+        
+        .box2 {
+            width: 100px;
+            height: 100px;
+            top: 200px;
+            left: 700px;
+            position: absolute;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+<script src="../static/jquery-3.5.1.min.js"></script>
+<script src="../static/撞击移动.js"></script>
+<script>
+    var move = new boxMove("box1");
+    move.init();
+</script>
+
+</html>
